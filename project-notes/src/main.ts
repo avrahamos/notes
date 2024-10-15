@@ -1,6 +1,7 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
-import cookiParser from 'cookie-parser';
+import * as cookiParser from 'cookie-parser';
+import 'dotenv/config';
 
 const port = process.env.PORT;
 async function bootstrap() {
